@@ -1,0 +1,10 @@
+the EventsController class has a single GET endpoint named GetAllEventsByEmail. It consumes the provided API by making an HTTP GET request to the specified URL with the email parameter.
+
+The response is then processed based on the status code returned by the API. If the response is successful (200 OK), the events are filtered to include only future events with a status of "Busy" or "OutOfOffice". 
+The final response object is constructed and returned.
+
+If the response status code indicates an error (e.g., 400, 429, 503), the corresponding error message from the API is returned to the client.
+
+This solution is production-ready,but these can be added like logging, dependency injection, unit tests, and additional error handling as per your project requirements.
+
+Please note that you will need to provide the appropriate email parameter when calling the API endpoint.
